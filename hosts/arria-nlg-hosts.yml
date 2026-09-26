@@ -1,0 +1,83 @@
+generated: '2026-09-26'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 5
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - identity
+  - other
+  - status
+  - website
+hosts:
+- host: api.arria.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: arria.com
+  role: api
+  relation: own
+- host: go.arria.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: arria.com
+  role: other
+  relation: own
+- host: login.arria.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: arria.com
+  role: identity
+  relation: own
+- host: status.arria.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: arria.com
+  role: status
+  relation: own
+- host: www.arria.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - Security
+  - PrivacyPolicy
+  - Leadership
+  - Website
+  - Blog
+  - Contact
+  - GettingStarted
+  - Documentation
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: arria.com
+  role: website
+  relation: own

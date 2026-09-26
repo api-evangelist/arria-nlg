@@ -1,23 +1,85 @@
 aid: arria-nlg
+
 name: Arria NLG
-description: 'Arria NLG is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.arria.com/wp-content/uploads/2026/02/Site-ShareCard-SwirlyColors-1024x536b.webp
+
+description: 'Arria NLG provides enterprise generative AI solutions, offering a platform that combines deterministic natural language generation with large language model capabilities. Their products include Studio for authoring analytics, Author for hybrid deterministic‑plus‑LLM content creation, and Answers for conversational AI. Arria serves industries such as financial services, pharma, energy, and consumer goods, delivering automated reports, portfolio commentaries, and custom analytics. The company emphasizes compliance, security, and integration with BI tools like PowerBI, Tableau, and Qlik.'
+
 url: https://raw.githubusercontent.com/api-evangelist/arria-nlg/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- AI
+- Generative AI
+- Natural Language Generation
+- Enterprise Software
+- Financial Services
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/arria-nlg-conformance.yml
+- type: Hosts
+  url: hosts/arria-nlg-hosts.yml
+- type: Vendors
+  url: vendors/arria-nlg-vendors.yml
+- type: TermsOfService
+  url: https://www.arria.com/terms-of-use
+- type: Security
+  url: https://www.arria.com/security
+- type: PrivacyPolicy
+  url: https://www.arria.com/privacy-policy
+- type: Leadership
+  url: https://www.arria.com/leadership
+- type: DomainSecurity
+  url: security/arria-nlg-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.arria.com
+- type: Blog
+  url: https://www.arria.com/blog
+- type: Contact
+  url: https://www.arria.com/contact
+- type: GettingStarted
+  url: https://www.arria.com/get-started
+- type: Documentation
+  url: https://www.arria.com/document-library
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-26'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://go.arria.com/mcp
+    status: 403
+  - url: https://www.nasdaqprivatemarket.com/
+    status: 200
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
