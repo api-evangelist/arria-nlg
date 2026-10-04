@@ -1,0 +1,21 @@
+{
+  "repo": "arria-nlg",
+  "feeds": [
+    {
+      "source": "https://www.arria.com",
+      "feed_url": "https://www.arria.com/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.arria.com/blog/feed/",
+      "feed_url": "https://www.arria.com/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 9,
+  "fetched": "2026-10-03T12:30:02Z"
+}
