@@ -1,0 +1,24 @@
+generated: '2026-10-19'
+method: searched
+checked:
+- tableau/integrations/tableau-integration-edges.yml
+source:
+- tableau/integrations/tableau-integration-edges.yml
+edges:
+- partner_name: Tableau (own)
+  partner: tableau
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://exchange.tableau.com/products/47
+  mirror_of: tableau/integrations/tableau-integration-edges.yml
+  apps:
+  - Intelligent Narratives for BI
+  listing_count: 1
+  detected: '2026-10-19'
+  detected_by: mirror-platform-listings.py
+  category: extension
